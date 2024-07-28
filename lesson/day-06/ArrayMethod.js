@@ -23,8 +23,12 @@ myStrings.reverse();
 let orderNumberArray = [100, 22, 19];
 orderNumberArray.sort(sortNumberASC);
 console.log(orderNumberArray);
+
 orderNumberArray.sort(sortNumberDESC);
 console.log(orderNumberArray);
+
+let mixedContent = ['a', 'A', 1];
+console.log(mixedContent.sort());
 // calculateBMI
 
 // console.log(evenNumber);

@@ -22,12 +22,10 @@ let teo = {
 // teo['my age'] = 20;
 // console.log(teo);
 
-
 // // Destructure
 // const { name, ['my age']: age } = teo;
 // console.log(name);
 // console.log(age);
-
 
 // // delete
 // delete teo.name;

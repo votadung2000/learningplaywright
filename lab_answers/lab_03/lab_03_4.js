@@ -8,7 +8,7 @@ let fooPosition = 0;
 let barPosition = 0;
 let mergedPosition = 0;
 
-for (; fooPosition < fooLength && barPosition < barLength; mergedPosition++){
+while (fooPosition < fooLength && barPosition < barLength){
   const fooValue = foo[fooPosition];
   const barValue = bar[barPosition];
   if (fooValue <= barValue) {
@@ -18,13 +18,17 @@ for (; fooPosition < fooLength && barPosition < barLength; mergedPosition++){
     merged[mergedPosition] = barValue;
     barPosition++;
   }
+  mergedPosition++;
 }
-
-for (; fooPosition < fooLength; fooPosition++, mergedPosition++) {
+while (fooPosition < fooLength) {
   merged[mergedPosition] = foo[fooPosition];
+  fooPosition++;
+  mergedPosition++;
 }
-for (; barPosition < barLength; barPosition++, mergedPosition++) {
+while (barPosition < barLength) {
   merged[mergedPosition] = bar[barPosition];
+  barPosition++;
+  mergedPosition++;
 }
 
 console.log(merged);
