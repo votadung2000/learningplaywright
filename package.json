@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "http-proxy-agent": "^7.0.2",
+    "https-proxy-agent": "^7.0.5",
     "readline-sync": "^1.4.10"
   },
   "name": "playwright",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
