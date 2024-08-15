@@ -21,7 +21,7 @@ function sendRequest(url, callback){
 }
 // Asynchronus
 function processResponse(response, callback){
-    console.log('1.Processing response...');
+    console.log('2.Processing response...');
     setTimeout(function (){
         callback(response.status);
     }, 3000);

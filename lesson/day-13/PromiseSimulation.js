@@ -16,6 +16,7 @@ asyncFunc01('param1')
    
 function asyncFunc01(param1){
     console.log(`Processing param: ${param1}`);
+    // Wrap asynchronous function into promise
     return new Promise(function(resolve, reject){
         setTimeout(function(){
             const returnedValue = 'asyncFunc01: ' + param1;

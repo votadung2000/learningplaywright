@@ -12,41 +12,16 @@
 // * Allow user to input an userid and postId, print out that post content
 // * Print all posts for that user
 
-const readline = require('readline-sync');
+import { default as fetch, FetchError } from 'node-fetch';
+import { question } from 'readline-sync';
+// import axios from 'axios';
 
-let url = 'https://jsonplaceholder.typicode.com';
+let url = 'https://jsonplaceholder.typicode.com/posts';
+ 
+// fetch(url)
+//     .then(getUserInput)
+//     .then(getResponse)
 
-fetch(url)
-    .then(getUserInput)
-    .then(getResponse)
-    // .then(postContentWithUserIDPostID)
-    // .then(printUserposts)
-
-function getUserInput() {
-    const userID = readline.question(`Please input your user ID:`);
-    const postID = readline.question(`Please input your post ID:`);
-}
-
-function getResponse(response){
-        return response.json();
-}
-
-// function postContentWithUserIDPostID(content) {
-//     for ( ; ; ) {
-//         if (userID === posts.userID && postID === posts.id) {
-            
-//             console.log(`Contents: ${content} `);
-//         } else {
-//             console.log(`Your userID or postID is insufficient!`);
-//         }
-//         return content;
-//     } 
-// }
-
-// function printUserposts(){
-//     // check userID
-//     // print posts
-// }
 
 
 
@@ -55,3 +30,10 @@ function getResponse(response){
 // * Please using PROMISE and ASYNC/AWAIT to solve this
 // * Allow user to input an userid and postId, print out that post content
 // * Print all posts for that user
+
+Test();
+async function Test(){
+    const response = await fetch(url);
+    const json = await response.json();
+    console.log(JSON.stringify(json));
+}
