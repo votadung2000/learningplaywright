@@ -1,6 +1,6 @@
 
 // Sử dụng import default
-import sendRequest from './RequestHelper.js';
+const sendRequest = require('./RequestHelper.js') ;
 
 const url = 'https://jsonplaceholder.typicode.com/posts';
 const userID = 1;
