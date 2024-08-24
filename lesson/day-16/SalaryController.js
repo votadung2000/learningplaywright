@@ -8,7 +8,7 @@ class SalaryController {
         employeeList.forEach(function(employee){
             totalSalary += employee.salary;
         });
-        return this.totalSalary;
+        return totalSalary;
     }
 
 }

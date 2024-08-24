@@ -1,6 +1,6 @@
 {
   "files.autoSave": "afterDelay",
-  "editor.fontSize": 8,
+  "editor.fontSize": 12,
   "editor.tabSize": 4,
   "editor.accessibilityPageSize": 8,
   "workbench.tree.indent": 8,

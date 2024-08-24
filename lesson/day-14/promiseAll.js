@@ -18,7 +18,7 @@ asyncFunc01('firstParam')
     })
     .catch(function(err){
         resizeBy({status: 500, msg:err})
-        // console.log(err);
+        console.log(err);
     })
 
 function asyncFunc01(param1) {
