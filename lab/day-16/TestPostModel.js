@@ -29,9 +29,10 @@ const userId = new Post(1,3);
 // const postId = new Post(2);
 
 let handler = new RequestHandler();
-const targetPosts = handler.printTargetPost([1, 2]);
-const allPosts = printAllPosts(1);
-
+const targetPosts = handler.printTargetPost(1, 2);
+console.log("targetPosts",targetPosts);
+const allPosts = handler.printAllPosts(1);
+console.log("allPosts",allPosts);
 
 
 
